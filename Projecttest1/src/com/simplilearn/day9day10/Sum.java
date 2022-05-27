@@ -1,4 +1,4 @@
-package com.simplilearn.day9;
+package com.simplilearn.day9day10;
 
 class Sum {
 	public int sum(int x, int y) {

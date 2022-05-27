@@ -1,4 +1,4 @@
-package com.simplilearn.day9;
+package com.simplilearn.day9day10;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -42,7 +42,7 @@ public class FileHandlingAssignment {
 		}
 	}
 	public static void createNewFile() throws IOException {
-		File file = new File("C://Files//test1.txt");
+		File file = new File("C://Users//Saiprasad//Desktop//Simplilearn Program//Session1//Files//test1.txt");
 
 		// Create the file
 		if (file.createNewFile()) {
@@ -54,14 +54,14 @@ public class FileHandlingAssignment {
 	}
 	public static void writeFile() throws IOException {
 		FileWriter writer = new FileWriter(
-				"C://Files//test1.txt");
+				"C://Users//Saiprasad//Desktop//Simplilearn Program//Session1//Files//test1.txt");
 		writer.write("File Handling Assignment");
 		writer.close();
 		System.out.println("File has been written");
 	}
 	@SuppressWarnings({ "unchecked", "rawtypes" })
 	public static void readFile() throws IOException {
-		List l = Files.readAllLines(Paths.get("C://Files//test1.txt"), StandardCharsets.UTF_8);
+		List l = Files.readAllLines(Paths.get("C://Users//Saiprasad//Desktop//Simplilearn Program//Session1//Files//test1.txt"), StandardCharsets.UTF_8);
 
 		Iterator<String> itr = l.iterator();
 		while (itr.hasNext())
@@ -70,11 +70,11 @@ public class FileHandlingAssignment {
 	@SuppressWarnings("static-access")
 	public static void modifyFile() throws IOException {
 		FileHandling3 f3=new FileHandling3();
-		f3.modifyFile("C://Files//test1.txt", "2", "modified");
+		f3.modifyFile("C://Users//Saiprasad//Desktop//Simplilearn Program//Session1//Files//test1.txt", "2", "modified");
 		System.out.println("File Modified");
 	}
 	public static void deleteFile() throws IOException {
-		Files.deleteIfExists(Paths.get("C://Files//test1.txt"));
+		Files.deleteIfExists(Paths.get("C://Users//Saiprasad//Desktop//Simplilearn Program//Session1//Files//test1.txt"));
 		System.out.println("File deleted");
 	}
 }

@@ -1,4 +1,4 @@
-package com.simplilearn.day9;
+package com.simplilearn.day9day10;
 
 public class Encapsulation 
 { 
